@@ -1,0 +1,36 @@
+<html>
+<style type="text/css">
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
+<h2>Final Results</h2>
+
+<body> 
+   <table border=2>
+    {% for key,value in maps.items() %}
+       <tr>
+           {# This is the comment sections #}
+           <th>{{ key }}</th>
+           <th>{{ value }}</th>
+
+       </tr>  
+     {% endfor %}
+   </table>
+
+</body>
+
+</html>

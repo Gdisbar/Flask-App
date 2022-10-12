@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+<script type="text/javascript" src="{{ url_for('static',filename='script.js') }}"> </script>
+
+<body>
+
+<h2>HTML Forms : redirected page "/status"</h2>
+<!-- /submit same as in main.py & we're posting this html form-->
+<form action="/submit" method='post'> 
+  <label for="Science">Science:</label><br>
+  <input type="text" id="science" name="science" value="0"><br>
+  <label for="Technology">Technology:</label><br>
+  <input type="text" id="technology" name="technology" value="0"><br><br>
+  <label for="Engineering ">Engineering:</label><br>
+  <input type="text" id="engineering" name="engineering" value="0"><br><br>
+  <label for="Maths">Maths:</label><br>
+  <input type="text" id="maths" name="maths" value="0"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+</body>
+</html>
